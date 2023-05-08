@@ -1,0 +1,55 @@
+
+.all-body{
+background-color: #30AADD;
+}
+.section{
+    background-size: 100%;
+    
+    padding-top: 75px;
+    
+}
+
+.form-box {
+    background-color: rgba(225, 225, 225, 0.5);
+    backdrop-filter: blur(30px);
+    border-radius: 20px;
+    border: 1px solid white;
+
+}
+.text{
+    width: 500px;
+    
+}
+.form-box input {
+    border-radius: 10px;
+}
+
+
+.input-box:focus {
+    box-shadow: 0 0 0;
+    border: 1px solid #f6288c;
+}
+.button{
+    background-image: linear-gradient(to right, #3330E4, #37E2D5, #39B5E0);
+    color: white;
+}
+.log-in-link{
+text-decoration: none;
+color: #30AADD;
+}
+.log-in-link:hover{
+    color: blue;
+}
+
+@media screen and (max-width: 990px){
+    .text{
+        margin-bottom: 40px;
+        size: 100px;
+    }
+}
+@media screen and (max-width: 767px){
+    .form-box{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}

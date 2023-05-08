@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+ margin: 0;
+
+  background: rgb(255, 25, 0);
+  background: linear-gradient(294deg, rgba(255, 25, 0, 1) 51%, rgba(34, 51, 195, 1) 51%);
+}
+
+
+.container-body {
+  background-color: #B9EDDD;
+}
+
+h2 {
+  color: #139e93;
+}
+
+hr {
+  background-color: #16776f;
+  width: 250px;
+  margin: 15px auto;
+  height: 5px;
+}
+
+
+i {
+  /* icon */
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #139e93;
+}
+
+h2 {
+  font-size: medium;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+/* FOR READMORE/READLESS BUTTON */
+.label1,
+.label2,
+.label3,
+.label4,
+.label5,
+.label6 {
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+  background-color: rgb(22, 22, 231);
+  padding: 3px 13px;
+  border-radius: 3px;
+  margin-top: 12px;
+}
+
+/* FOR CARD 1 AND 2 */
+.check1,
+.check2 {
+  display: none;
+}
+
+.content1,
+.content2 {
+  display: none;
+}
+
+/* FOR 1 */
+#check1:checked~.content1 {
+  display: block;
+}
+
+#check1:checked~.label1 {
+  display: none;
+}
+
+/* FOR 2 */
+#check2:checked~.content2 {
+  display: block;
+}
+
+#check2:checked~.label2 {
+  display: none;
+}
+
+/* END OF CARD 1 AND 2 */
+
+/* FOR CARD 3 AND 4 */
+.check3,
+.check4 {
+  display: none;
+}
+
+.content3,
+.content4 {
+  display: none;
+}
+
+#check3:checked~.content3 {
+  display: block;
+}
+
+#check3:checked~.label3 {
+  display: none;
+}
+
+#check4:checked~.content4 {
+  display: block;
+}
+
+#check4:checked~.label4 {
+  display: none;
+}
+
+/* END OF CARD 3 AND 4 */
+
+/* FOR CARD 3 AND 4 */
+.check5,
+.check6 {
+  display: none;
+}
+
+.content5,
+.content6 {
+  display: none;
+}
+
+#check5:checked~.content5 {
+  display: block;
+}
+
+#check5:checked~.label5 {
+  display: none;
+}
+
+#check6:checked~.content6 {
+  display: block;
+}
+
+#check6:checked~.label6 {
+  display: none;
+}
+
+/* END OF CARD 3 AND 4 */
+
+.img {
+  height: 110px;
+  width: 110px;
+}
+
+
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif; 
+}*/
+
+@media all and (max-width: 900px) {
+  nav {
+    padding: 5px 30px;
+  }
+
+  nav ul li.items {
+    width: 100%;
+    display: none;
+  }
+
+  nav ul li.items.show {
+    display: block;
+  }
+
+  nav ul li.btn {
+    display: block;
+  }
+
+  nav ul li.items:hover {
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px #004b91,
+      inset 0 0 10px #004b91;
+  }
+
+  nav ul li.items:hover:after {
+    opacity: 0;
+  }
+
+
+}
+
+
+footer {
+  background-color: #f2f2f2;
+  padding: 1px 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.col-md-4 {
+  padding: 0 15px;
+}
+
+h4 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(201, 159, 159, 0.432);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #000000;
+  transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+  color: #020202;
+  background-color: #646464;
+}
+
+.fa {
+  display: inline-block;
+  font-size: 1.5rem;
+  width: 20px;
+  height: 30px;
+  line-height: 20px;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.fa:hover {
+  background-color: #f44336;
+}
